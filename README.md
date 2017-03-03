@@ -4,6 +4,7 @@ Port scanner project for IT567.
 INSTALL
 
 1. Make sure the buck.py file and the argparserwrapper.py file are in the same folder.
+2. Install scapy.
 
 RUN
 
@@ -13,7 +14,7 @@ buck.py -t [target IP(s)] -p [port(s)]
 
 Full usage:
 
-buck.py [-h] -p P -t T [-x] [-sn] [-u] [-html HTML]
+buck.py [-h] [-p port(s)] -t [target IP(s)] [-x] [-sn] [-u] [-html HTML]
 
 OPTIONS EXPLAINED:
 
@@ -38,4 +39,17 @@ OPTIONS EXPLAINED:
   -u          Use UDP for port scanning.
   
   -html HTML  Exports the results to an HTML file with the specifed name.
+  
+  WHAT BUCKANEER CAN DO
+  
+  1. Take a host and port from the command line and do a port scan.
+  2. Present the results of the scan.
+  3. Allow multiple hosts to be scanned, either from the command line as a range or a list or from reading in a file.
+  4. Allow multiple ports to be scanned, either as a range or a list.
+  5. Use ICMP to ping a host to make sure it is up before doing a port scan on that host.
+  6. Use either TCP or UDP to do the port scanning.
+  7. Export the results of the scan to an HTML file in a nice format.
+  8. Allow a Christmas tree scan.
+  9. If port 22 is open, it attempts to get the SSH header.
+  10. Do just a ping scan without any port scanning.
 
