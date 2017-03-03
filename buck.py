@@ -25,7 +25,7 @@ def scanHost(host, port_list, scan_flags):
 	
 	#if we're just doing a ping scan, we don't need to continue with the port scann
 	if scan_flags['sn'] == True:
-		return []
+		return [], []
 
 	open_ports = []
 	filtered_ports = []

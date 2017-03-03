@@ -191,7 +191,7 @@ class ArgParseWrapper:
 		#--------available arguments----------
 		
 		#-p flag: ports follow, required arg
-		self.parser.add_argument('-p', help='The port(s) to be scanned. Can be a single port, comma-separated (no spaces), or a range. Example 1: -p 22; Example 2: -p 22,23,80; Example 3: -p 22-80; Example 4: -p 23-80,1054', required=True)
+		self.parser.add_argument('-p', help='The port(s) to be scanned. Can be a single port, comma-separated (no spaces), or a range. Example 1: -p 22; Example 2: -p 22,23,80; Example 3: -p 22-80; Example 4: -p 23-80,1054')
 		
 		#-t flag: targets (as IP addresses) follow, required arg
 		self.parser.add_argument('-t', help='The target host(s) to be scanned. Can be an IP address, a range of IP addresses, or a .txt file containing a list of IP address', required=True)
